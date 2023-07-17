@@ -18,39 +18,83 @@
     />
   </head>
   <body>
-    <img class="logo" src="./data/Logo.png" />
-    <p class="welcome">Welcome to the Data & Analystics Services page!</p>
-    <div >
-      <p class="services">Social Listening</p>
-      <br />
-      <div class="buttons">
+    <div class="header">
+      <img class="logo" src="./data/Logo2.png" />
+      <div class="contact">
+        <a
+          title="Please email us if you have any questions or comments"
+          href="mailto:Analytics@clinicalmind.com?subject=Enter the subject"
+          target="_blank"
+          >Contact Us
+        </a>
+      </div>
+    </div>
+    <p class="welcome" style="text-align: center">
+      Welcome to the Data & Analystics Services page!
+    </p>
+    <div id="all-services">
+      <div id="sl-wrapper" class="service-wrapper">
         <div>
+          <p class="services">
+            <img class="img" src="./data/social_lis.png" />Social Listening
+          </p>
+          <div class="buttons">
+            <div>
+              <div class="btn-wrapper">
+                <button id="sl_button" class="btn" type="checkbox">
+                  <img class="quest" src="./data/questions.png" />
+                  <p class="section-title">Business Questions</p>
+                </button>
+              </div>
+              <p id="sl_output" class="section-text"></p>
+            </div>
+          </div>
+          <div>
             <div class="btn-wrapper">
-            <button id="sl_button" class="btn" type="checkbox"><img class="quest" src="./data/questions.png" /> </button>
-          <p class="section-title">Business Questions </p>
-        </div>
-            <p id="sl_output" class="section-text"></p>
-        </div>
-        <div>
-            <div class="btn-wrapper">
-            <button id="sld_button" class="btn"><img class="desc" src="./data/descr.png" /></button>
-            <p class="section-title">Service Description </p>
-        </div>
+              <button id="sld_button" class="btn">
+                <img class="desc" src="./data/descr.png" />
+                <p class="section-title">Service Description</p>
+              </button>
+            </div>
             <p id="sld_output" class="section-text"></p>
+            <div>
+              <div class="btn-wrapper" style="text-align: left">
+                <button id="slcs_button" class="btn">
+                  <img class="case-study" src="./data/case_study.png" />
+                  <p class="section-title">Case Study</p>
+                </button>
+              </div>
+              <p id="slcs_output" class="section-text"></p>
+            </div>
+          </div>
         </div>
-        </div>
-      <br>
-      <p class="services">KOL Identification & Engagement Recommendations</p>
-      <br />
-      <p class="services">Video & Audio Transcriptions</p>
-      <br />
-      <p class="services">Event Monitoring</p>
-      <p class="services">Data Exploration Services (e.g. Data Collection, Web Scraping, dashboarding, reporting, etc.)</p>
-      <p class="services">ChatGPT Support</p>
-      <p class="services">Survey & Sentiment Analytics</p>
-      <p class="services">Lexicon Analysis</p>
-      <p class="services">Literature Review</p>
-    <div>
+      </div>
+      <div id="hcp-wrapper" class="service-wrapper">
+        <p class="services">
+          <img class="img" src="./data/hcp.png" />HCP Identification
+        </p>
+      </div>
+      <div id="lex-wrapper" class="service-wrapper">
+        <p class="services">
+          <img class="img" src="./data/lexicon.png" />Lexicon Analysis
+        </p>
+      </div>
+      <div id="event-wrapper" class="service-wrapper">
+        <p class="services">
+          <img class="img" src="./data/conference.png" />Event Monitoring
+        </p>
+      </div>
+      <div id="liter-wrapper" class="service-wrapper">
+        <p class="services">
+          <img class="img" src="./data/publication.png" />Literature Review
+        </p>
+      </div>
+      <div id="da-wrapper" class="service-wrapper">
+        <p class="services">
+          <img class="img" src="./data/data.png" />General D&A Services
+        </p>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
