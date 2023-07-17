@@ -1,0 +1,52 @@
+.logo {
+  width: 20%;
+  padding: 2%;
+}
+.welcome {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 1% 1% 1% 5%;
+  font-weight: 700;
+  font-size: 42px;
+  color: #e03c31;
+}
+.services {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 1% 1% 1% 5%;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.section-title {
+  padding: 1% 1% 1% 2%;
+}
+.section-text {
+  padding: 1% 1% 1% 5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+.quest {
+  width: 80;
+  height: 80;
+}
+.desc {
+  width: 80;
+  height: 80;
+}
+.btn {
+  padding: 1%;
+  cursor: pointer;
+}
+
+.btn-wrapper {
+  display: flex;
+  padding: 1% 1% 1% 5%;
+  column-gap: 10px;
+}
