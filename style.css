@@ -22,6 +22,7 @@ a:hover {
   padding: 1%;
 }
 .logo {
+  position: absolute;
   width: 20%;
   height: auto;
   padding: 2% 2% 2% 2%;
@@ -31,7 +32,7 @@ a:hover {
   margin: 0;
   padding: 5% 5% 5% 5%;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 50px;
   color: #e03c31;
 }
 .img {
@@ -40,8 +41,8 @@ a:hover {
 }
 
 .service-wrapper {
-  border: 1px solid rgb(207, 204, 204);
-  background-color: rgb(208, 211, 211);
+  border: 1px solid rgb(88, 87, 87);
+  background-color: rgb(184, 187, 187);
 }
 .services {
   display: flex;
@@ -50,12 +51,14 @@ a:hover {
   padding: 1% 1% 5% 5%;
   font-weight: 700;
   font-size: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-title {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 26px;
 }
 .section-title {
   padding: 3% 3% 3% 3%;
@@ -66,13 +69,14 @@ a:hover {
   padding: 1% 1% 1% 5%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 .quest,
 .desc,
 .case-study {
   width: 60;
   height: 60;
+  display: none;
 }
 
 .btn {
@@ -93,7 +97,8 @@ a:hover {
 
 .btn-wrapper {
   display: flex;
-  padding: 3% 3% 3% 3%;
+  /* padding: 3% 3% 3% 
+  3%; */
   justify-content: center;
   /* column-gap: 10px; */
 }
@@ -137,11 +142,11 @@ a:hover {
   grid-row: 5/6;
   grid-area: "da-wrapper";
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   #all-services {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr 0.5fr 4fr;
+    grid-template-rows: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr;
 
     grid-template-areas: "sl-wrapper", "hcp-wrapper", "lex-wrapper",
       "event-wrapper", "liter-wrapper", "da-wrapper";
@@ -169,12 +174,12 @@ a:hover {
   }
   #liter-wrapper {
     grid-column: 2/3;
-    grid-row: 8/9;
+    grid-row: 9/10;
     grid-area: "liter-wrapper";
   }
   #da-wrapper {
     grid-column: 2/3;
-    grid-row: 9/10;
+    grid-row: 11/12;
     grid-area: "da-wrapper";
   }
 }
